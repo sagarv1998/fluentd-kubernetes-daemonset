@@ -25,4 +25,4 @@ steps:
     azureResourceGroup: $(azureResourceGroup)
     kubernetesCluster: $(kubernetesCluster)
     command: get
-    arguments: ns -A
+    arguments: pods -n loki
