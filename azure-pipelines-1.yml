@@ -25,4 +25,4 @@ steps:
     azureResourceGroup: $(azureResourceGroup)
     kubernetesCluster: $(kubernetesCluster)
     command: get
-    arguments: pods -n loki| grep promtail
+    arguments: pods -n loki | grep promtail
