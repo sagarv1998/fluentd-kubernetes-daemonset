@@ -13,12 +13,12 @@ pool:
 variables:
   azureSubscriptionEndpoint: pv-prod-azdevops
   azureContainerRegistry: pvbackend.azurecr.io
-  azureResourceGroup: pv-aks-prod-rg
+  azureResourceGroup: pv-prod-aks-rg
   kubernetesCluster: pv-aks-prod-01
 
 steps:
 - task: Kubernetes@1
-  displayName: kubectl apply
+  displayName: kubectl get
   inputs:
     connectionType: Azure Resource Manager
     azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
